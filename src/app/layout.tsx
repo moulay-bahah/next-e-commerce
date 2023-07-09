@@ -23,9 +23,10 @@ export default function RootLayout({
             <ApplicationLogo />
             <ul className="flex gap-2 font-bold">
               <li className="text-secondary"><Link href="/">home</Link></li>
-              <li className="hover:text-secondary"><Link href="/Auth/Login">login</Link></li>
               <li className="hover:text-secondary"><Link href="/Auth/Register">register</Link></li>
               <li className="hover:text-secondary"><Link href="/My/list">list</Link></li>
+              <li className="hover:text-secondary"><Link href="/Auth/Login">login</Link></li>
+              <li className="hover:text-secondary"><Link href="/">logout</Link></li>
             </ul>
           </div>
         </nav>

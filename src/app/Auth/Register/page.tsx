@@ -1,7 +1,8 @@
+import PageTitle from "../../../Components/pageTitle";
 export default function page() {
     return (
         <>
-            <h1 className="mx-auto max-w-md font-bold text-secondary text-lg flex justify-center my-4">Register</h1>
+            <PageTitle title="Register"/>
             <form className="mx-auto max-w-md">
                 <div className="mb-4">
                 <label htmlFor="email" className="block text-gray-700 font-bold mb-2">
@@ -24,12 +25,20 @@ export default function page() {
                 />
                 </div>
                 <div className="flex items-center justify-between">
-                <button
-                    type="submit"
-                    className="mt-4 bg-secondary text-white font-semibold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
-                >
-                    Sign In
-                </button>
+                    <button
+                        type="submit"
+                        className="mt-4 bg-secondary text-white font-semibold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
+                    >
+                        Sign In
+                    </button>
+                </div>
+                <div className="flex gap-4">
+                    <button className="mt-4 bg-secondary text-white font-semibold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
+                        succes
+                    </button>
+                    <button className="mt-4 bg-secondary text-white font-semibold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
+                        failed
+                    </button>
                 </div>
             </form>
         </>

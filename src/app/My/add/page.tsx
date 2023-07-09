@@ -1,7 +1,8 @@
+import PageTitle from "../../../Components/pageTitle";
 export default function page() {
     return (
         <>
-            <h1 className="mx-auto font-bold text-secondary text-lg flex justify-center my-4">add</h1>
+            <PageTitle title="add"/>
             <form className="mx-auto container grid gap-4 grid-cols-2">
                 <div className="mb-4">
                     <label htmlFor="article" className="block text-gray-700 font-bold mb-2">article</label>
@@ -57,6 +58,14 @@ export default function page() {
                         className="mt-4 bg-secondary text-white font-semibold py-3 px-4 rounded focus:outline-none focus:shadow-outline w-full"
                     >
                         Sign In
+                    </button>
+                </div>
+                <div className="flex gap-4">
+                    <button className="mt-4 bg-secondary text-white font-semibold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
+                        succes
+                    </button>
+                    <button className="mt-4 bg-secondary text-white font-semibold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
+                        failed
                     </button>
                 </div>
             </form>
