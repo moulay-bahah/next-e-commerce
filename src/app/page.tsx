@@ -4,7 +4,7 @@ import PageTitle from "../Components/pageTitle";
 export default function page() {
   return (
     <>
-      <PageTitle title="home"/>
+      <PageTitle title="home" />
       <div className="container mx-auto grid gap-5 grid-cols-fluid pt-5">
         <ArticleItem />
         <ArticleItem />
@@ -19,5 +19,5 @@ export default function page() {
         <ArticleItem />
       </div>
     </>
-  )
+  );
 }
